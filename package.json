@@ -1,0 +1,32 @@
+{
+  "name": "letta-unanswered-messages",
+  "version": "0.1.0",
+  "description": "Letta Code mod that reminds the agent once when a turn ends with channel messages it never replied to.",
+  "author": "Lillith",
+  "license": "Apache-2.0",
+  "type": "module",
+  "keywords": [
+    "letta-package",
+    "letta-mod",
+    "letta-code",
+    "channels",
+    "discord",
+    "telegram"
+  ],
+  "files": [
+    "README.md",
+    "MOD.md",
+    "mods"
+  ],
+  "scripts": {
+    "test": "bun test"
+  },
+  "letta": {
+    "manifestVersion": 1,
+    "mods": ["./mods/index.ts"],
+    "capabilities": ["events.turns", "events.tools"],
+    "engines": {
+      "lettaCodeCli": ">=0.30.0"
+    }
+  }
+}
